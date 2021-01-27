@@ -19,3 +19,11 @@ Important classes:
 Constrainints:
 1. OpenCV uses filters to process images. Filters are 2D matrix and the size and values must be determined before. There is a need to generalize it for all size of barcodes.
 2. Non-horizontal barcodes – A brute-force approach will be to try for every angle between 1 and 90. Runtime is a concern here.
+
+Future Work:
+1. Use OCR to parse text within the barcode region. The region usually contains numbers associated with the barcode. This strengthens the elimination of false positives.
+2. Generalize for different types of barcodes.
+
+References:
+1. https://www.pyimagesearch.com/2014/11/24/detecting-barcodes-images-python-opencv/
+2. OpenCV documentation: https://docs.opencv.org/4.5.1/
