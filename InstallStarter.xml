@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FoxitPlugin version="1">
+	<Property 
+		Name="Starter"
+		FriendlyName="Starter"
+		Description="Starter"
+		PIPath="Starter.fpi"
+		LoadBehavior="3"
+		MinVersion=""
+	/>
+</FoxitPlugin>
