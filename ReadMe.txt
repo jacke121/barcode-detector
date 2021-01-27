@@ -1,4 +1,6 @@
-Goal: Detect barcodes in PDFs and split the PDFs based on the presences of barcodes in the page.
+This project is part of Student Bounty program by Foxit Software.
+
+Goal: Detect barcodes in Foxit PDFs and split the PDFs based on the presences of barcodes in the page.
 Use case: Consider a PDF with 10 pages and barcodes on Page 1, 3, 5, 6, 7. The PDF will be split into 5 PDFs with pages 1-2, 3-4, 5, 6, 7-10 respectively.
 
 Steps:
@@ -15,6 +17,10 @@ Important classes:
 	
 2. Barcode.h, Barcode.cpp - Store the detected barcode
 	- Attributes: Barcode region, text associated with barcode(Need to implement using OCR), page number in which it is present.
+
+Library:
+1. OpenCV 4.5.1 - Windows x86 architecture - .lib and .dll files must be generated from source.
+2. Foxit Plugin SDK
 
 Constrainints:
 1. OpenCV uses filters to process images. Filters are 2D matrix and the size and values must be determined before. There is a need to generalize it for all size of barcodes.
