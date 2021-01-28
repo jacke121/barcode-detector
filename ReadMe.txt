@@ -1,4 +1,4 @@
-This project is part of Student Bounty program by Foxit Software.
+#This project is part of Student Bounty program by Foxit Software.
 
 Goal: Detect barcodes in Foxit PDFs and split the PDFs based on the presences of barcodes in the page.
 Use case: Consider a PDF with 10 pages and barcodes on Page 1, 3, 5, 6, 7. The PDF will be split into 5 PDFs with pages 1-2, 3-4, 5, 6, 7-10 respectively.
