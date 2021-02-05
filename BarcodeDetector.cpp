@@ -100,8 +100,8 @@ void BarcodeDetector::detect(cv::Mat img, cv::Mat& result) {
 		checkPointBoundary(rect_points[3]);
 		cv::Rect rrr(rect_points[1], rect_points[3]);
 		result = greyMat(rrr);
-		//cv::imshow("image2", result);
-		//cv::waitKey(0);
+		cv::imshow("image2", result);
+		cv::waitKey(0);
 
 		// Draw bounding box 
 		cv::Mat drawing = img.clone();
@@ -115,8 +115,8 @@ void BarcodeDetector::detect(cv::Mat img, cv::Mat& result) {
 			//std::cout << rect_points[j] << rect_points[(j + 1) % 4] << std::endl;
 		}
 
-		//imshow("image2", drawing);
-		//cv::waitKey(0);
+		imshow("image2", drawing);
+		cv::waitKey(0);
 		//return result;
 	}
 }
